@@ -18,7 +18,7 @@ import MakeAppointment from './make-appointment';
 import MakeAppointmentFilled from './make-appointment-filled';
 import ValidateAppointment from './validate-appointment';
 import JadwalDokter from './jadwal-dokter';
-import JadwalHari from './jadwal-hari';
+import JadwalTanggal from './jadwal-tanggal';
 import EditJanji from './edit-janji';
 import UnderCons from './under-construction';
 import Editing from './editing';
@@ -43,7 +43,7 @@ ReactDOM.render(
         <Route exact path="/make-appointment-filled" component={MakeAppointmentFilled} />
         <Route exact path="/validate-appointment" component={ValidateAppointment} />
         <Route exact path="/jadwal-dokter" component={JadwalDokter} />
-        <Route exact path="/jadwal-hari" component={JadwalHari} />
+        <Route exact path="/jadwal-tanggal" component={JadwalTanggal} />
         <Route exact path="/edit-janji" component={EditJanji} />
         <Route exact path="/under-construction" component={UnderCons} />
         <Route exact path="/editing" component={Editing} />

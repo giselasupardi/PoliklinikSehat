@@ -30,8 +30,8 @@ class JadwalDokter extends Component {
 				<td><a href='/jadwal-dokter' className="focus">
 					DOKTER
 				</a></td>
-				<td><a href='/jadwal-hari' className="focus">
-					HARI
+				<td><a href='/jadwal-tanggal' className="focus">
+					TANGGAL
 				</a></td>
 			</tr>
 		</table>

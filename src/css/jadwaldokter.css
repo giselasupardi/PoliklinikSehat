@@ -8,6 +8,15 @@
 	text-align: center;
 }
 
+@media screen and (max-width: 576px) {
+	.jadwaldokter-page {
+		margin: auto !important;
+		width: 100%;
+		text-align: center;
+	}
+
+}
+
 .head {
 	display: flex;
 	justify-content: space-between;
