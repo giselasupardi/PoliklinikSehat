@@ -1,0 +1,62 @@
+.val-page {
+	text-align: center;
+	width: 500px !important;
+	margin: auto;
+}
+
+.validation {
+	border: 3px solid black !important;
+	width: 80%;
+	padding: 5px;
+	display: flex;
+	justify-content: center;
+	margin: auto;
+	margin-top: 2rem;
+}
+
+.form-content {
+	padding-top: 2rem !important;
+	max-width: 500px;
+	margin: auto;
+}
+
+.fullwidth {
+	position: relative;
+	width: 100%;
+	padding: 3px;
+}
+
+table.val-table {
+	border: 0px !important;
+	margin: 0;
+	border-color: transparent !important;
+}
+
+.val-table td {
+	border: 0px !important;
+	text-align: left;
+}
+
+.flex-end {
+	align-items: center;
+	display: flex;
+	justify-content: space-around;
+}
+
+.no-button {
+  margin-top: 3rem;
+  width: 100px;
+  background-color: #cc0000 !important;
+  text-align: center;
+  float: left;
+  color: white !important;
+}
+
+.ok-button {
+  margin-top: 3rem;
+  width: 100px;
+  background-color: #93c47d !important;
+  text-align: center;
+  float: right;
+  color: white !important;
+}

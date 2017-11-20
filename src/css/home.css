@@ -1,0 +1,43 @@
+.container {
+  width: 100% !important;
+}
+
+.more-info {
+  text-align: right;
+  width: 100% !important;
+  margin-bottom: 11rem;
+}
+
+.welcome {
+  margin-top: 12%;
+  text-align: center;
+}
+
+.logo {
+  margin : auto;
+  margin-bottom: 15%;
+  margin-bottom: 13rem;
+}
+
+.license-agree {
+  margin-top: 15%;
+  text-align: center;
+  margin-bottom: 7px;
+}
+
+.signbutton{
+  text-align: center;
+  bottom: 0;
+}
+
+.modal-text {
+  color: black;
+}
+
+.haveaccount {
+  margin-top: 5px;
+  text-align: right;
+  text-decoration: underline;
+  color: #fff123;
+}
+

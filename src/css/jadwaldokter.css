@@ -1,0 +1,81 @@
+.container {
+	text-align: center;
+}
+
+.jadwaldokter-page {
+	margin: auto !important;
+	width: 500px;
+	text-align: center;
+}
+
+.head {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.notice {
+	margin: auto 0 auto;
+	color: #cc0000;
+}
+
+.menu-table {
+	margin: auto !important;
+	text-align: center !important;
+	width: 100% !important;
+	border-spacing: 1px !important;
+}
+
+.menu-table td {
+	background-color: cornflowerblue !important;
+	margin: 0 !important;
+	text-align: center !important;
+	width: 50% !important;
+	color: white !important;
+}
+
+.menu-table tr:nth-child(2) td {
+	height: 40px !important;
+}
+
+.menu-table tr:nth-child(2) td:hover {
+	background-color: #cce2ff  !important;
+}
+
+.focus {
+	color: white !important;
+	font-size: 16px;
+}
+
+.select {
+	margin-top: 1rem !important;
+}
+
+.table {
+	margin-top: 1rem;
+	width: 100%;
+}
+
+.the-table {
+	border-collapse: collapse !important;
+	margin: auto !important;
+	text-align: center !important;
+	width: 100% !important;
+}
+
+.the-table th {
+	background-color: cornflowerblue !important;
+	color: white !important;
+}
+
+.the-table tr:nth-child(even) {
+	background-color: aliceblue !important;
+}
+
+.the-table tr:nth-child(odd) {
+	background-color: white !important;
+}
+
+.the-table th {
+	width: 100px !important;
+}
