@@ -11,7 +11,7 @@
 @media screen and (max-width: 576px) {
 	.jadwaldokter-page {
 		margin: auto !important;
-		width: 100%;
+		width: 100% !important;
 		text-align: center;
 	}
 
