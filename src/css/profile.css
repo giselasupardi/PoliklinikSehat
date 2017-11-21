@@ -1,0 +1,28 @@
+.profile {
+	border: 3px solid black !important;
+	width: 80%;
+	padding: 5px;
+	display: flex;
+	justify-content: left;
+	margin: auto;
+	margin-top: 2rem;
+}
+
+table.profile-table {
+	border: 0px !important;
+	margin: 0;
+	border-color: transparent !important;
+}
+
+img.profpict{
+	width : 120px;
+	height : 120px;
+        margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+.registerbutton {
+  margin-top: 3rem;
+  text-align: center;
+}

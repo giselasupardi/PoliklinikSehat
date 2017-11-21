@@ -1,0 +1,26 @@
+.navbarinformation {
+  margin-bottom: -1rem;
+}
+
+.nav-text {
+  float: left;
+  margin-left: 5px;
+
+}
+
+.nav-icon {
+  margin-top: -0.25rem;
+}
+
+a {
+  color: #000000;
+}
+
+.active{
+  color: white !important;
+  opacity: 1;
+}
+
+.navbar {
+  background-color: #4aa6f7;
+}

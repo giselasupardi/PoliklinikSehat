@@ -1,0 +1,29 @@
+h1 {
+  padding-top: 4%;
+}
+
+.container {
+  text-align: center;
+}
+
+table.login-table {
+  width: 60% !important;
+  margin : auto;
+  margin-top: 1rem;
+  border-collapse:separate;
+  border-spacing:0 15px;
+}
+
+.login-table tr{
+  margin-bottom: 10rem;
+}
+
+.captcha {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.loginbutton {
+  margin-top: 3rem;
+  text-align: center;
+}

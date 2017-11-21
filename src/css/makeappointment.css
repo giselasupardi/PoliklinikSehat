@@ -1,0 +1,72 @@
+.container {
+	text-align: center;
+}
+
+.maindiv {
+	margin: auto 1rem;
+}
+
+.makeapp-form {
+	margin-top: 0px !important;
+}
+
+.form-content {
+	padding-top: 2rem !important;
+	max-width: 500px;
+	margin: auto;
+}
+
+.set-marginbottom {
+	margin-bottom: 1rem !important;
+}
+
+.fullwidth {
+	position: relative;
+	width: 100%;
+	padding: 3px;
+}
+
+.usia {
+	width: 30% !important;
+	padding-right: 1rem !important;
+}
+
+.tujuan {
+	resize: none !important;
+	height: 8rem !important;
+}
+
+table.app-table {
+	width: 100% !important;
+	border: 0px !important;
+	margin: 0;
+	border-color: transparent !important;
+}
+
+.app-table td {
+	border: 0px !important;
+}
+
+.app-table tr :nth-child(1) {
+	text-align: left;
+}
+
+.app-table tr :nth-child(2) {
+	text-align: right;
+}
+
+.link-jadwal {
+	text-decoration: underline;
+	color: darkcyan;
+}
+
+.link-jadwal:hover {
+	color: blue;
+}
+
+.app-button {
+  margin-top: 3rem;
+  width: 100%;
+  background-color: #93c47d !important;
+  text-align: center;
+}
