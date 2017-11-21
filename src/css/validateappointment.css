@@ -1,7 +1,7 @@
 .val-page {
 	text-align: center;
-	width: 500px !important;
-	margin: auto;
+	width: 500px;
+	margin: 3em auto;
 }
 
 .validation {
@@ -43,6 +43,10 @@ table.val-table {
 	justify-content: space-around;
 }
 
+.valid-form {
+	margin-top: 4rem !important;
+}
+
 .no-button {
   margin-top: 3rem;
   width: 100px;
@@ -59,4 +63,13 @@ table.val-table {
   text-align: center;
   float: right;
   color: white !important;
+}
+
+@media screen and (max-width: 500px) {
+	.val-page {
+		width: 100% !important;
+	}
+	.form-content {
+		width: 100% !important;
+	}
 }
