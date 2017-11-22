@@ -27,7 +27,7 @@ class JadwalTanggal extends Component {
     return (
       <div>
       
-      <Navbar/>
+      <Navbar name='Events'/>
       <br/>
       <br/>
       <div className='jadwaldokter-page'>

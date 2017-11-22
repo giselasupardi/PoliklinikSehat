@@ -9,7 +9,7 @@ class EditJanji extends Component {
   render() {
     return (
       <div className='container'>
-        <Navbar/>
+        <Navbar name='Appointment'/>
         <div class="edit-page">
           <div class="search-bar">
 

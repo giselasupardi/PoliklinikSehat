@@ -27,7 +27,7 @@ class BPJSValidation extends Component {
     return (
       <div>
       
-        <Navbar/>
+        <Navbar name='Status BPJS'/>
         <br/>
         <Form action='/statusbpjs' className='form'>
           <Form.Field width={8} required className="card-number" >

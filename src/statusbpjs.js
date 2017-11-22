@@ -11,7 +11,7 @@ class StatusBPJS extends Component {
     return (
       <div>
       
-      <Navbar/>
+      <Navbar name='Status BPJS'/>
       <h3 className="status_text">Status BPJS, {name}</h3>
 
       <Table celled>

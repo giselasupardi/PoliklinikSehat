@@ -8,7 +8,7 @@ class Appointment extends Component {
   render() {
     return (
       <div className='container'>
-        <Navbar/>
+        <Navbar name='Appointment'/>
         <div className='welcometext'>
           <h2 className='welctext'>Selamat malam, Trundy</h2>
         </div>

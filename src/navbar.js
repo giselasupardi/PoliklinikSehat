@@ -4,12 +4,15 @@ import { NavLink } from "react-router-dom";
 import './css/navbar.css';
 
 class Navbar extends Component {
+  constructor(props) {
+    super(props);
+  }
   render() {
     return (
       <Grid className='navbar'>        
         <Grid.Row className='navbarinformation'>
           <Grid.Column mobile={12} computer={12}>
-            <h2 className='nav-text'>Poliklinik Sehat</h2>
+            <h2 className='nav-text'>{this.props.name}</h2>
           </Grid.Column>
           <Grid.Column mobile={4} computer={4} textAlign='right'>
             <Icon name='setting' size='large'/>

@@ -8,7 +8,7 @@ class JadwalDokter extends Component {
   render() {
     return (
       <div>
-      <Navbar/>
+      <Navbar name='Appointment'/>
       <br/>
       <br/>
       <div className='jadwaldokter-page'>

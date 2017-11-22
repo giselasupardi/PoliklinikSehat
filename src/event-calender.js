@@ -106,7 +106,7 @@ class EventCalendar extends Component {
         return (
             <div>
 
-                <Navbar/>
+                <Navbar name='Events'/>
                 <br/>
 
                 <Calender/>
