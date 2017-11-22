@@ -25,7 +25,7 @@ class MakeAppointment extends Component {
   render() {
     return (
       <div className='container'>
-        <Navbar/>
+        <Navbar name='Appointment'/>
         <div className='maindiv'>
           <div className='form-content'>
           <Form className='makeapp-form' action='/validate-appointment'>

@@ -13,7 +13,7 @@ class Profile extends Component{
     render(){
         return(
             <div>
-                <Navbar/>
+                <Navbar name='Profile'/>
                 <br/>
                 <div className='profile'>
                     <table className = 'profile-table'>

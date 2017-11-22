@@ -23,7 +23,7 @@ class Penyuluhan extends Component {
     render() {
         return (
             <div>
-            <Navbar/>
+            <Navbar name='Events'/>
             <br/><br/>
                 <Grid className='penyuluhan'>
                     <Grid.Row className='penyuluhan-title'>
