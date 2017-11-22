@@ -5,6 +5,7 @@ import moment from 'moment';
 import 'react-datepicker/dist/react-datepicker.css';
 import './css/addriwayat.css';
 import { NavLink } from "react-router-dom";
+import back from './resources/images/back.png';
 
 class AddRiwayat extends Component {
 
@@ -27,6 +28,7 @@ class AddRiwayat extends Component {
       <div className='container'>
         <div class='form-content'>
         <Form className='makeapp-form'>
+        <NavLink to='/profile' activeClassName="active"><img src={back} height="25" width="25" align="left"/></NavLink>
         <h1> Tambah Daftar Riwayat </h1>
         <table className='add-table'>
         <tr>
@@ -47,13 +49,6 @@ class AddRiwayat extends Component {
             <td align='left'> Durasi Sakit :</td>
             <td colspan='2' width='60%' text-align='right'>
                 <input class="fullwidth" required />
-                </td>
-                <td width='30%'>
-                <select name="durasi">
-                  <option value="1">Hari</option>
-                  <option value="2">Bulan</option>
-                  <option value="3">Tahun</option>
-                </select>
             </td>
           </tr>
           <tr>
