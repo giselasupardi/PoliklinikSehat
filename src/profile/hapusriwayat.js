@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Button, Form } from 'semantic-ui-react';
 import 'react-datepicker/dist/react-datepicker.css';
-import './css/validateappointment.css';
+import '../css/validateappointment.css';
 
 class HapusRiwayat extends Component {
 

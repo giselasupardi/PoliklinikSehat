@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Table, Form, Icon } from 'semantic-ui-react';
 import { Link } from "react-router-dom";
-import Navbar from './navbar';
-import './css/jadwaldokter.css';
+import Navbar from '../../navbar';
+import '../../css/jadwaldokter.css';
 
 class JadwalDokter extends Component {
   render() {

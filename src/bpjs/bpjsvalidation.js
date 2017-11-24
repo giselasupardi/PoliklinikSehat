@@ -3,8 +3,8 @@ import { Form, Button } from 'semantic-ui-react';
 import DatePicker from 'react-datepicker';
 import Captcha from 'react-captcha';
 import moment from 'moment';
-import Navbar from './navbar';
-import './css/bpjsvalidation.css';
+import Navbar from '../navbar';
+import '../css/bpjsvalidation.css';
 import 'react-datepicker/dist/react-datepicker.css';
 
 class BPJSValidation extends Component {

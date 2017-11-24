@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import {Link} from "react-router-dom";
 import BigCalendar from 'react-big-calendar';
 import moment from 'moment';
-import Navbar from './navbar';
+import Navbar from '../navbar';
 import 'react-datepicker/dist/react-datepicker.css';
 import 'react-big-calendar/lib/css/react-big-calendar.css';
-import './css/calendar.css';
+import '../css/calendar.css';
 
 let eventArray = [
     {

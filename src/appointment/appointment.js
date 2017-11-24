@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 import {Icon} from 'semantic-ui-react';
-import Navbar from './navbar';
-import './css/appointment.css';
+import Navbar from '../navbar';
+import '../css/appointment.css';
 
 class Appointment extends Component {
   render() {

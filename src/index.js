@@ -5,53 +5,38 @@ import './css/index.css';
 import registerServiceWorker from './registerServiceWorker';
 import 'semantic-ui-css/semantic.min.css';
 import Home from './home';
-import Register from './register';
-import Login from './login';
-import StatusBPJS from './statusbpjs';
-import BPJSValidation from './bpjsvalidation';
-import BPJSHelper1 from './helpbpjs1';
-import BPJSHelper2 from './helpbpjs2';
-import BPJSHelper3 from './helpbpjs3';
-import EventCalender from './event-calender';
-import Appointment from './appointment';
-import MakeAppointment from './make-appointment';
-import MakeAppointmentFilled from './make-appointment-filled';
-import ValidateAppointment from './validate-appointment';
-import JadwalDokter from './jadwal-dokter';
-import JadwalTanggal from './jadwal-tanggal';
-import EditJanji from './edit-janji';
+import * as Session from './session/export';
+import * as BPJS from './bpjs/exportbpjs';
+import * as Appointment from './appointment/export';
+import * as Events from './events/export';
+import * as Profile from './profile/export';
 import UnderCons from './under-construction';
-import Editing from './editing';
-import Profile from './profile';
-import AddRiwayat from './addriwayat';
-import HapusRiwayat from './hapusriwayat';
-import Penyuluhan from './events/penyuluhan';
 
 ReactDOM.render(
   <BrowserRouter>
     <div>
         <Route exact path="/" component={Home} />
-        <Route exact path="/register" component={Register} />
-        <Route exact path="/login" component={Login} />
-        <Route exact path="/bpjsvalidation" component={BPJSValidation} />
-        <Route exact path="/statusbpjs" component={StatusBPJS} />
-        <Route exact path="/helpbpjs/first" component={BPJSHelper1} />
-        <Route exact path="/helpbpjs/next" component={BPJSHelper2} />
-        <Route exact path="/helpbpjs/last" component={BPJSHelper3} />
-        <Route exact path="/appointment" component={Appointment} />        
-        <Route exact path="/make-appointment" component={MakeAppointment} />
-        <Route exact path="/make-appointment-filled" component={MakeAppointmentFilled} />
-        <Route exact path="/validate-appointment" component={ValidateAppointment} />
-        <Route exact path="/jadwal-dokter" component={JadwalDokter} />
-        <Route exact path="/jadwal-tanggal" component={JadwalTanggal} />
-        <Route exact path="/edit-janji" component={EditJanji} />
+        <Route exact path="/register" component={Session.Register} />
+        <Route exact path="/login" component={Session.Login} />
+        <Route exact path="/bpjsvalidation" component={BPJS.BPJSValidation} />
+        <Route exact path="/statusbpjs" component={BPJS.StatusBPJS} />
+        <Route exact path="/helpbpjs/first" component={BPJS.BPJSHelper1} />
+        <Route exact path="/helpbpjs/next" component={BPJS.BPJSHelper2} />
+        <Route exact path="/helpbpjs/last" component={BPJS.BPJSHelper3} />
+        <Route exact path="/appointment" component={Appointment.Appointment} />        
+        <Route exact path="/make-appointment" component={Appointment.MakeAppointment} />
+        <Route exact path="/make-appointment-filled" component={Appointment.MakeAppointmentFilled} />
+        <Route exact path="/validate-appointment" component={Appointment.ValidateAppointment} />
+        <Route exact path="/jadwal-dokter" component={Appointment.JadwalDokter} />
+        <Route exact path="/jadwal-tanggal" component={Appointment.JadwalTanggal} />
+        <Route exact path="/edit-janji" component={Appointment.EditJanji} />
+        <Route exact path="/editing" component={Appointment.Editing} />
         <Route exact path="/under-construction" component={UnderCons} />
-        <Route exact path="/editing" component={Editing} />
-        <Route exact path="/events" component={EventCalender} />
-        <Route exact path="/profile" component={Profile}/>
-        <Route exact path="/addriwayat" component={AddRiwayat}/>
-        <Route exact path="/hapusriwayat" component={HapusRiwayat}/>
-        <Route exact path="/penyuluhan" component={Penyuluhan}/>
+        <Route exact path="/events" component={Events.EventCalender} />
+        <Route exact path="/penyuluhan" component={Events.Penyuluhan}/>
+        <Route exact path="/profile" component={Profile.Profile}/>
+        <Route exact path="/addriwayat" component={Profile.AddRiwayat}/>
+        <Route exact path="/hapusriwayat" component={Profile.HapusRiwayat}/>
     </div>
   </BrowserRouter>
 , document.getElementById('root'));

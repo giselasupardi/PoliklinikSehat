@@ -3,9 +3,9 @@ import { Form, Button } from 'semantic-ui-react';
 import DatePicker from 'react-datepicker';
 import moment from 'moment';
 import 'react-datepicker/dist/react-datepicker.css';
-import './css/addriwayat.css';
+import '../css/addriwayat.css';
 import { NavLink } from "react-router-dom";
-import back from './resources/images/back.png';
+import back from '../resources/images/back.png';
 
 class AddRiwayat extends Component {
 
@@ -28,7 +28,9 @@ class AddRiwayat extends Component {
       <div className='container'>
         <div class='form-content'>
         <Form className='makeapp-form'>
-        <NavLink to='/profile' activeClassName="active"><img src={back} height="25" width="25" align="left"/></NavLink>
+        <NavLink to='/profile' activeClassName="active">
+          <img src={back} height="25" width="25" align="left" alt="back"/>
+        </NavLink>
         <h1> Tambah Daftar Riwayat </h1>
         <table className='add-table'>
         <tr>

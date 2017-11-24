@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Icon } from 'semantic-ui-react';
 import { Link } from "react-router-dom";
-import Navbar from './navbar';
-import './css/editjanji.css';
+import Navbar from '../../navbar';
+import '../../css/editjanji.css';
 
 class EditJanji extends Component {
 

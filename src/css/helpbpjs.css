@@ -1,6 +1,7 @@
 
 .instruction-div {
-
+ text-align: center;
+ width: 100%;
  position:absolute;  
  top:21%;
 }

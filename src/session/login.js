@@ -1,18 +1,19 @@
 import React, { Component } from 'react';
 import { Form, Button, Header } from 'semantic-ui-react';
 import Captcha from 'react-captcha';
-import './css/register.css';
+import '../css/login.css';
 
-class Register extends Component {
+class Login extends Component {
 
   render() {
     return (
       <div className='container'>
         <Header textAlign='center'>
-          <h1> REGISTER </h1>
+          <h1> LOGIN </h1>
         </Header>
-        <Form className='registerform' action='/appointment'>
-          <table className="register-table">
+        <Form className='loginform' action='/appointment'>
+          <div className='loginbox'>
+          <table class='login-table'>
             <tr>
               <td>Email</td>
               <td><input placeholder='Email' /></td> 
@@ -21,25 +22,21 @@ class Register extends Component {
               <td>Password</td>
               <td><input placeholder='Password' type='password' /></td> 
             </tr>
-            <tr>
-              <td>Confirm Password</td>
-              <td><input placeholder='Confirm Password' type='password' /></td>
-            </tr>
           </table>
           <div className='captcha'>
             <Captcha
               sitekey = '6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI'
               lang = 'en'
               theme = 'light'
-            />
+          />
           </div>
-          <div className='registerbutton'>
-            <Button href="/" negative>Cancel</Button>
-            <Button type='submit' positive>Sign Up</Button>
+          <div className='loginbutton'>
+            <Button type='submit' primary>Login</Button>
+          </div>
           </div>
         </Form>
       </div>
     );
   }
 }
-export default Register;
+export default Login;

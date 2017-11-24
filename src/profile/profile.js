@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
-import { Icon, Table, Form, Button, Header } from 'semantic-ui-react';
-import logo from './resources/images/johan.jpg';
-import phone from './resources/images/telephone.jpg';
-import cake from './resources/images/cake.jpg';
-import man from './resources/images/man.jpg';
-import { Link } from "react-router-dom";
-import Navbar from './navbar';
+import { Button } from 'semantic-ui-react';
+import logo from '../resources/images/johan.jpg';
+import phone from '../resources/images/telephone.jpg';
+import cake from '../resources/images/cake.jpg';
+import man from '../resources/images/man.jpg';
+import Navbar from '../navbar';
 import { NavLink } from "react-router-dom";
-import './css/profile.css';
+import '../css/profile.css';
 
 class Profile extends Component{
     render(){
@@ -18,17 +17,29 @@ class Profile extends Component{
                 <div className='profile'>
                     <table className = 'profile-table'>
                     <tr>                
-                        <td rowspan='2' align='left' width='15%'><img src={logo} className='profpict'/></td> 
-                        <td align='left' width='75%'><b><font size='5'> Rolly Polly Olly </font></b></td>
-                        <td align='right'><h6 align='right'>edit</h6></td>
+                        <td rowspan='2' align='left' width='15%'>
+                            <img src={logo} className='profpict' alt="profile"/>
+                        </td> 
+                        <td align='left' width='75%'>
+                            <b><font size='5'> Rolly Polly Olly </font></b>
+                        </td>
+                        <td align='right'>
+                            <h6 align='right'>edit</h6>
+                        </td>
                     </tr>
                     <tr>
                     <td><font size='5'> Polly </font></td>
                     </tr>
                     <tr>
-                        <td align='center'><img src={phone} height="25" width="25"/>08123456789</td> 
-                        <td align='center'><img src={cake} height="25" width="25"/>31/12/99</td>
-                        <td align='center'><img src={man} height="25" width="25"/></td>
+                        <td align='center'>
+                        <img src={phone} height="25" width="25" alt="phone"/>08123456789
+                        </td> 
+                        <td align='center'>
+                        <img src={cake} height="25" width="25" alt="cake"/>31/12/99
+                        </td>
+                        <td align='center'>
+                        <img src={man} height="25" width="25" alt="man"/>
+                        </td>
                     </tr>
                    </table>
                 </div>

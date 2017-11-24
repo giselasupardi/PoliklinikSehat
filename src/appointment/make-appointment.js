@@ -3,8 +3,8 @@ import { Form, Button } from 'semantic-ui-react';
 import DatePicker from 'react-datepicker';
 import moment from 'moment';
 import 'react-datepicker/dist/react-datepicker.css';
-import Navbar from './navbar';
-import './css/makeappointment.css';
+import Navbar from '../navbar';
+import '../css/makeappointment.css';
 
 class MakeAppointment extends Component {
 
