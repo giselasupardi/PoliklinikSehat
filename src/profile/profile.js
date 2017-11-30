@@ -23,9 +23,6 @@ class Profile extends Component{
                         <td align='left' width='75%'>
                             <b><font size='5'> Rolly Polly Olly </font></b>
                         </td>
-                        <td align='right'>
-                            <h6 align='right'>edit</h6>
-                        </td>
                     </tr>
                     <tr>
                     <td><font size='5'> Polly </font></td>
@@ -46,9 +43,6 @@ class Profile extends Component{
                 <div className='profile'>
                 <h3> Riwayat Penyakit </h3>
                     <table className = 'profile-table'>
-                    <br/>
-                    <tr></tr>
-                    <tr></tr>
                     <tr>
                     <NavLink to='/hapusriwayat' activeClassName="active">
                         <td>Sakit Hati</td>
