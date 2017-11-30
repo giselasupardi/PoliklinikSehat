@@ -44,10 +44,8 @@ class Profile extends Component{
                 <h3> Riwayat Penyakit </h3>
                     <table className = 'profile-table'>
                     <tr>
-                    <NavLink to='/hapusriwayat' activeClassName="active">
-                        <td>Sakit Hati</td>
+                        <NavLink to='/hapusriwayat' activeClassName="active"><td>Sakit Hati</td></NavLink>
                         <td>2014</td>
-                    </NavLink>
                     </tr>
                     <tr>
                         <td>Rabies</td>
