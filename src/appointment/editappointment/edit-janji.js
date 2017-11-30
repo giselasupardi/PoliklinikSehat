@@ -1,40 +1,17 @@
 import React, { Component } from 'react';
-import { Icon, Modal } from 'semantic-ui-react';
+import { Icon } from 'semantic-ui-react';
 import { Link } from "react-router-dom";
 import Navbar from '../../navbar';
+import ConfirmDelete from './confirm-delete';
 import '../../css/editjanji.css';
 
 class EditJanji extends Component {
 
-  showDeleteConfirmation() {
-    'trash-button'.click(function(){
-        ('.ui.basic.modal').modal('show');
-      });
-  }
-
   render() {
 
     return (
-      // <Modal>
-      //   <Header>
-      //     <Icon class="archive"/>
-      //     Archive Old Messages
-      //   </Header>
-      //   <div class="content">
-      //     <p>Apakah Anda yakin ingin membatalkan janji ini?</p>
-      //   </div>
-      //   <div class="actions">
-      //     <div class="ui red basic cancel inverted button">
-      //       <Icon class="remove"/>No
-      //     </div>
-      //     <div class="ui green ok inverted button">
-      //       <Icon class="checkmark"/>Yes
-      //     </div>
-      //   </div>
-      // </Modal>
-
       <div className='container'>
-        <Navbar name='Appointment'/>
+        <Navbar name='Janji Dokter'/>
         <div className="edit-page">
           <br />
           <div className="search-bar">
@@ -48,7 +25,7 @@ class EditJanji extends Component {
               <tr>
                 <td>Romeo Uno</td>
                 <td>                  
-                  <Link to='/under-construction'>
+                  <Link to='/info-janji'>
                     <Icon name='info circle' size='large' color='green'/>
                   </Link>
                 </td>
@@ -64,9 +41,7 @@ class EditJanji extends Component {
               <tr>
                 <td>30 Desember 2017 | 15.30</td> 
                 <td>           
-                  <span className='trash-button'>
-                    <Icon name='trash' size='large' color='red' className='trash-button' />
-                  </span>
+                  <ConfirmDelete />
                 </td>
               </tr>
               <tr>
@@ -79,7 +54,7 @@ class EditJanji extends Component {
               <tr>
                 <td>Rolly Polly Olly</td> 
                 <td>                  
-                  <Link to='/under-construction'>
+                  <Link to='/info-janji'>
                     <Icon name='info circle' size='large' color='green'/>
                   </Link>
                 </td>
@@ -95,9 +70,7 @@ class EditJanji extends Component {
               <tr>
                 <td>4 April 2099 | 10.20</td> 
                 <td>           
-                  <a href="/under-construction">       
-                    <Icon name='trash' size='large' color='red'/>
-                  </a>
+                  <ConfirmDelete />
                 </td>
               </tr>
               <tr>
@@ -110,7 +83,7 @@ class EditJanji extends Component {
               <tr>
                 <td>Rolly Polly Olly</td> 
                 <td>                  
-                  <Link to='/under-construction'>
+                  <Link to='/info-janji'>
                     <Icon name='info circle' size='large' color='green'/>
                   </Link>
                 </td>
@@ -126,9 +99,7 @@ class EditJanji extends Component {
               <tr>
                 <td>31 Maret 2199 | 13.30</td> 
                 <td>           
-                  <a href="/under-construction">       
-                    <Icon name='trash' size='large' color='red'/>
-                  </a>
+                  <ConfirmDelete />
                 </td>
               </tr>
               <tr>

@@ -109,6 +109,19 @@
 	background-color: #cce2ff  !important;
 }
 
+.menu-jadwal-button {
+	background-color: transparent !important;
+	width: 100%;
+	height: 40px;
+	margin: 0;
+	border: 0 !important;
+	color: white !important;
+}
+
+.menu-jadwal-button:hover {
+	background-color: #cce2ff  !important;
+}
+
 .focus {
 	color: white !important;
 	font-size: 16px;

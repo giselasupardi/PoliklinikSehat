@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Button, Form } from 'semantic-ui-react';
-import '../css/validateappointment.css';
+import '../../css/validateappointment.css';
 
-class ValidateAppointment extends Component {
+class InfoJanji extends Component {
 
   render() {
     return (
@@ -51,15 +51,13 @@ class ValidateAppointment extends Component {
             </tr>
           </table>
         </div>
-        <Form className='valid-form' action='/appointment'>
-          <div class='flex-end'>
-            <Button href='make-appointment-filled' className='no-button'>Salah</Button>
-            <Button type='submit' primary className='ok-button'>Benar</Button>
-          </div>
-        </Form>
+        <br/>
+        <div class='fullwidth text-center'>
+          <Button href='edit-janji' color='red'>Kembali</Button>
+        </div>
       </div>
     );
   }
 
  }
-export default ValidateAppointment;
+export default InfoJanji;

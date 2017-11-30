@@ -17,13 +17,53 @@
 }
 
 .set-marginbottom {
-	margin-bottom: 1rem !important;
+	margin-bottom: 10px !important;
 }
 
 .fullwidth {
 	position: relative;
 	width: 100%;
 	padding: 3px;
+}
+
+.input-w-span {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 10px;
+}
+
+.input-w-span input {
+	width: 80% !important;
+}
+
+.input-w-span select {
+	width: 80% !important;
+}
+
+.input-w-span span {
+	margin: auto;
+	margin-left: 1px;
+	text-align: left;
+}
+
+.input-w-bigspan {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 10px;
+}
+
+.input-w-bigspan input {
+	width: 100% !important;
+}
+
+.input-w-bigspan select {
+	width: 60% !important;
+}
+
+.input-w-bigspan span {
+	margin: auto;
+	margin-left: 1px;
+	text-align: left;
 }
 
 .usia {
@@ -41,10 +81,15 @@ table.app-table {
 	border: 0px !important;
 	margin: 0;
 	border-color: transparent !important;
+	border-collapse: collapse !important;
 }
 
 .app-table td {
 	border: 0px !important;
+}
+
+.second-table td:nth-child(1) {
+	width: 45% !important;
 }
 
 .app-table tr :nth-child(1) {

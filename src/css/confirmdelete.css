@@ -1,0 +1,18 @@
+.modal-box {
+	width: 100%;
+	position: relative;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.info-button-modal {
+	padding: 10px !important;
+}
+
+.info-inside-modal {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+}

@@ -9,8 +9,8 @@ class UnderCons extends Component {
         <Navbar/>
         <br/><br/>
         <div className='us-page'>
-          Sorry, we are still under construction
-          <br/>:(
+          <p>Sorry, we are still under construction
+          <br/>:(</p>
         </div>
       </div>
     );

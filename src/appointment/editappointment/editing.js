@@ -25,7 +25,7 @@ class Editing extends Component {
   render() {
     return (
       <div className='container'>
-        <Navbar name='Appointment'/>
+        <Navbar name='Janji Dokter'/>
         <div className='maindiv'>
           <div className='form-content'>
           <Form className='makeapp-form' action='/validate-appointment'>

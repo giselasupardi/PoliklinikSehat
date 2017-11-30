@@ -25,7 +25,7 @@ class MakeAppointment extends Component {
   render() {
     return (
       <div className='container'>
-        <Navbar name='Appointment'/>
+        <Navbar name='Janji Dokter'/>
         <div className='maindiv'>
           <div className='form-content'>
           <Form className='makeapp-form' action='/validate-appointment'>
@@ -34,66 +34,64 @@ class MakeAppointment extends Component {
                 <option value="self">Daftar untuk diri Anda</option>
                 <option value="other">Daftar untuk orang lain</option>
             </select>
+            <div className='input-w-span'>
+              <span>Nama:</span>
+              <input placeholder='Nama Lengkap' required />
+            </div>
+            <div className='input-w-span'>
+              <span>Telepon:</span>
+              <input placeholder='Nomor yang dapat dihubungi' required />
+            </div>
+            <div className='input-w-span'>
+              <span>Usia:</span>
+              <input placeholder='Usia' required />
+            </div>
+            <div className='input-w-span'>
+              <span>Gender:</span>
+              <select name="jeniskelamin" className="jk">
+                <option value="L">Laki-laki</option>
+                <option value="P">Perempuan</option>
+              </select>
+            </div>
 
-            <input placeholder='Nama Lengkap' className="fullwidth set-marginbottom" required />
-            <input placeholder='Nomor yang dapat dihubungi' className="fullwidth" required />
-            <table className="app-table">
-              <tr>
-              <td className="usia">
-                <input placeholder='Usia' className="fullwidth" required />
-              </td>
-              <td>
-                <select name="jeniskelamin" className="jk">
-                  <option value="template" disabled selected>Jenis Kelamin</option>
-                  <option value="L">Laki-laki</option>
-                  <option value="P">Perempuan</option>
-                </select>
-              </td>
-              </tr>
-            </table>
-
-
-            <textarea name="tujuan" placeholder="Tujuan pertemuan" className='tujuan' required></textarea>
+            <textarea name="tujuan" placeholder="Tujuan pertemuan" className='tujuan set-marginbottom' required></textarea>
             
-            <table className='app-table'>
-              <tr>
-                <td>Pilih tanggal:</td>
-                <td><DatePicker
-                    selected={this.state.startDate}
-                    onChange={this.handleChange}/>
-                    </td> 
-              </tr>
-              <tr>
-                <td><a href="/jadwal-dokter-v2" className="link-jadwal">Lihat jadwal dokter</a></td>
-                <td>
-                  <select name="dokter">
-                    <option value="template" disabled selected>Pilih dokter</option>
-                    <option value="1">dr. Antis Akit - Mata</option>
-                    <option value="2">dr. Jang An Pil Ih - Internis</option>
-                    <option value="3">dr. Kuatdan Pintar - THT</option>
-                    <option value="4">dr. Pastisehat Lah - Internis</option>
-                    <option value="5">dr. Sayno Tosakit - Saraf</option>
-                    <option value="6">dr. Se Nyum Trus - Gigi</option>
-                  </select>
-                </td> 
-              </tr>
-              <tr>
-                <td>Pilih waktu pertemuan</td>
-                <td>
-                  <select name="jamjanji">
-                    <option value="template" disabled selected></option>
-                    <option value="1">07.00</option>
-                    <option value="2">08.00</option>
-                    <option value="3">09.00</option>
-                    <option value="4">10.00</option>
-                    <option value="5">13.00</option>
-                    <option value="6">14.00</option>
-                    <option value="7">15.00</option>
-                    <option value="8">16.00</option>
-                    <option value="9">17.00</option>
-                  </select></td> 
-              </tr>
-            </table>
+            <div className='input-w-bigspan'>
+              <span>Pilih tanggal:</span>
+              <DatePicker selected={this.state.startDate} onChange={this.handleChange}/>
+            </div>
+
+            <div className='input-w-bigspan'>
+              <span><a href="/jadwal-dokter-v2" className="link-jadwal">
+                Lihat jadwal dokter
+              </a></span>
+              <select name="dokter">
+                <option value="template" disabled selected>Pilih dokter</option>
+                <option value="1">dr. Antis Akit - Mata</option>
+                <option value="2">dr. Jang An Pil Ih - Internis</option>
+                <option value="3">dr. Kuatdan Pintar - THT</option>
+                <option value="4">dr. Pastisehat Lah - Internis</option>
+                <option value="5">dr. Sayno Tosakit - Saraf</option>
+                <option value="6">dr. Se Nyum Trus - Gigi</option>
+              </select>
+            </div>
+
+            <div className='input-w-bigspan'>
+              <span>Pilih waktu:</span>
+              <select name="jamjanji">
+                <option value="template" disabled selected></option>
+                <option value="1">07.00</option>
+                <option value="2">08.00</option>
+                <option value="3">09.00</option>
+                <option value="4">10.00</option>
+                <option value="5">13.00</option>
+                <option value="6">14.00</option>
+                <option value="7">15.00</option>
+                <option value="8">16.00</option>
+                <option value="9">17.00</option>
+              </select>
+            </div>
+            
             <div>
               <Button type='submit' primary className='app-button'>Buat Janji</Button>
             </div>

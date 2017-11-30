@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Table, Form, Icon } from 'semantic-ui-react';
+import { Form, Icon, Button } from 'semantic-ui-react';
 import { Link } from "react-router-dom";
 import Navbar from '../../navbar';
 import '../../css/jadwaldokter.css';
@@ -8,7 +8,7 @@ class JadwalDokterWBack extends Component {
   render() {
     return (
       <div>
-      <Navbar name='Appointment'/>
+      <Navbar name='Janji Dokter'/>
       <br/>
       <br/>
       <div className='jadwaldokter-page'>
@@ -28,10 +28,14 @@ class JadwalDokterWBack extends Component {
 			</tr>
 			<tr>
 				<td><a href='/jadwal-dokter-v2' className="focus">
-					DOKTER
+					<Button className='menu-jadwal-button'>	
+						DOKTER
+					</Button>
 				</a></td>
 				<td><a href='/jadwal-tanggal-v2' className="focus">
-					TANGGAL
+					<Button className='menu-jadwal-button'>					
+						TANGGAL					
+					</Button>
 				</a></td>
 			</tr>
 		</table>

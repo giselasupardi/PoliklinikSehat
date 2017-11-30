@@ -33,6 +33,7 @@ ReactDOM.render(
         <Route exact path="/jadwal-tanggal-v2" component={Appointment.JadwalTanggalWBack} />
         <Route exact path="/edit-janji" component={Appointment.EditJanji} />
         <Route exact path="/editing" component={Appointment.Editing} />
+        <Route exact path="/info-janji" component={Appointment.InfoJanji} />
         <Route exact path="/under-construction" component={UnderCons} />
         <Route exact path="/events" component={Events.EventCalender} />
         <Route exact path="/penyuluhan" component={Events.Penyuluhan}/>
