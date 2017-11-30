@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Icon, Modal, Button } from 'semantic-ui-react';
-import { Link } from "react-router-dom";
 import '../../css/confirmdelete.css';
 
 class ConfirmDelete extends Component {

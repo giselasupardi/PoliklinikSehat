@@ -21,23 +21,29 @@ class Appointment extends Component {
             <tr>
               <td className='makejanji'>
                 <Link to='/make-appointment'>
-                  <Icon name='plus circle' size='huge' color='green'/>
-                  <br/><br/>
-                  Membuat janji
+                  <button>
+                    <Icon name='plus circle' size='huge' color='green'/>
+                    <br/><br/>
+                    Membuat janji
+                  </button>
                 </Link>
               </td>
               <td className='jadwal'>
                <Link to='/jadwal-dokter'>
-                  <Icon name='list' size='huge' color='grey'/>
-                  <br/><br/>
-                  Melihat Jadwal Dokter
+                  <button>
+                    <Icon name='list' size='huge' color='grey'/>
+                    <br/><br/>
+                    Melihat Jadwal Dokter
+                  </button>
                 </Link>
               </td> 
               <td className='editjanji'>
                 <Link to='/edit-janji'>
-                  <Icon name='pencil' size='huge' color='yellow'/>
-                  <br/><br/>
-                  Mengubah janji
+                  <button>
+                    <Icon name='pencil' size='huge' color='yellow'/>
+                    <br/><br/>
+                    Mengubah janji
+                  </button>
                 </Link>
               </td>
             </tr>

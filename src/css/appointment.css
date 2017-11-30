@@ -39,6 +39,9 @@ table.appointment-table {
     height: auto !important;
     padding: 10px 5px;
   }
+  .appointment-table button {
+    height: auto !important;
+  }
   .choosetext {
     margin-top: 0 !important;
   }
@@ -52,6 +55,14 @@ table.appointment-table {
   height: 200px;
   width: 100px;
   border : 1px solid;
+}
+
+.appointment-table button {
+  background-color: transparent !important;
+  width: 100%;
+  height: 200px;
+  margin: 0;
+  border: 0 !important;
 }
 
 .makejanji {
