@@ -7,7 +7,7 @@ import 'react-datepicker/dist/react-datepicker.css';
 import Navbar from '../../navbar';
 import '../../css/jadwaldokter.css';
 
-class JadwalTanggal extends Component {
+class JadwalTanggalWBack extends Component {
 
   constructor (props) {
     super(props)
@@ -32,6 +32,9 @@ class JadwalTanggal extends Component {
       <br/>
       <div className='jadwaldokter-page'>
       	<div className='head'>
+	      <Link to='/make-appointment-filled'>
+	      	<Icon name='arrow circle left' color='grey' size='big' />
+	      </Link>
 	      <span className='notice'>
 	      	Jadwal hari biasa. Untuk hari libur Nasional, diberlakukan jadwal khusus.
 	      </span>
@@ -43,10 +46,10 @@ class JadwalTanggal extends Component {
 				<td colspan="2">Jadwal berdasarkan...</td>
 			</tr>
 			<tr>
-				<td><a href='/jadwal-dokter' className="focus">
+				<td><a href='/jadwal-dokter-v2' className="focus">
 					DOKTER
 				</a></td>
-				<td><a href='/jadwal-tanggal' className="focus">
+				<td><a href='/jadwal-tanggal-v2' className="focus">
 					TANGGAL
 				</a></td>
 			</tr>
@@ -246,4 +249,4 @@ class JadwalTanggal extends Component {
     );
   }
 }
-export default JadwalTanggal;
+export default JadwalTanggalWBack;

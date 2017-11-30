@@ -8,13 +8,40 @@
 	text-align: center;
 }
 
+.th-cornflowerblue th {
+	background-color: cornflowerblue !important;
+	color: white;
+}
+
+@media screen and (max-width: 767px) {
+	.jadwaldokter-page {
+		margin: auto !important;
+		width: 100% !important;
+		text-align: center;
+	}
+	.tabel-spesialisasi-dokter {
+		width: 68% !important;
+	}
+}
+
 @media screen and (max-width: 576px) {
 	.jadwaldokter-page {
 		margin: auto !important;
 		width: 100% !important;
 		text-align: center;
 	}
-
+	.tabel-spesialisasi-dokter {
+		width: 68% !important;
+	}
+	.tabel-jadwal-dokter {
+		width: 30%;
+	}
+	.tabel-jadwal-dokter td {
+		min-width: 150px;
+	}
+	.tabel-spesialisasi-dokter {
+		width: 90% !important;
+	}
 }
 
 .head {
@@ -28,11 +55,41 @@
 	color: #cc0000;
 }
 
+.bg-green {
+	background-color: green !important;
+	color: white;
+}
+
+.bg-orange {
+	background-color: orange !important;
+	color: white;
+}
+
+.bg-blue {
+	background-color: #a7b9f9 !important;
+	color: white;
+}
+
+.bg-aqua {
+	background-color: aqua !important;
+	color: navy;
+}
+
+.bg-pink {
+	background-color: hotpink !important;
+	color: white;
+}
+
+.bg-yellow {
+	background-color: #f6eaae !important;
+	color: black;
+}
+
 .menu-table {
 	margin: auto !important;
 	text-align: center !important;
 	width: 100% !important;
-	border-spacing: 1px !important;
+	border-collapse: collapse;
 }
 
 .menu-table td {
@@ -41,6 +98,7 @@
 	text-align: center !important;
 	width: 50% !important;
 	color: white !important;
+	border: 2px solid white;
 }
 
 .menu-table tr:nth-child(2) td {
@@ -63,28 +121,84 @@
 .table {
 	margin-top: 1rem;
 	width: 100%;
+	overflow-x: scroll;
 }
 
-.the-table {
-	border-collapse: collapse !important;
-	margin: auto !important;
-	text-align: center !important;
-	width: 100% !important;
-}
+.tabel-jadwal-dokter {
+	border-collapse: collapse;  
+	margin: 10px 0;
+	width: 25% !important;
+	display: table-cell;
+} 
 
-.the-table th {
-	background-color: cornflowerblue !important;
-	color: white !important;
-}
-
-.the-table tr:nth-child(even) {
+.tabel-jadwal-dokter tr:nth-child(even) {
 	background-color: aliceblue !important;
 }
 
-.the-table tr:nth-child(odd) {
+.tabel-jadwal-dokter:nth-child(odd) {
 	background-color: white !important;
 }
 
-.the-table th {
-	width: 100px !important;
+.tabel-jadwal-dokter th {
+	border: 1px #ddd solid;
+	padding: 10px 0;
+	height: 40px !important;
+	width: 124px !important;
+}
+
+.tabel-jadwal-dokter td {
+	border: 1px #ddd solid;
+	padding: 10px 0;
+	height: 40px !important;
+	min-width: 124px;
+}
+
+.tabel-spesialisasi-dokter {
+	margin: 0 auto;
+	width: 70%;
+	border-collapse: collapse !important;
+}
+
+.tabel-spesialisasi-dokter th:nth-child(1) {
+	text-align: left;
+	padding-left: 6px;
+}
+
+.tabel-spesialisasi-dokter td:nth-child(1) {
+	text-align: left;
+	padding-left: 6px;
+}
+
+.tabel-spesialisasi-dokter th {
+	height: 35px;
+	border: 1px solid black;
+}
+
+.tabel-spesialisasi-dokter td {
+	height: 35px;
+	border: 1px solid black;
+}
+
+.jadwal-per-tanggal {
+	border-collapse: collapse;
+	width: 90% !important;
+	margin: 10px auto;
+	border: 1px solid black;
+}
+
+.jadwal-per-tanggal td {
+	height: 30px;
+	width: 16px;
+	border: 1px solid white;
+	background-color: black;
+}
+
+.jadwal-per-tanggal td:nth-child(1) {
+	border: 1px solid black;
+	background-color: white !important;
+}
+
+.jadwal-per-tanggal th {
+	height: 30px;
+	border: 1px solid black;
 }

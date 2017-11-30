@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import Navbar from '../../navbar';
 import '../../css/jadwaldokter.css';
 
-class JadwalDokter extends Component {
+class JadwalDokterWBack extends Component {
   render() {
     return (
       <div>
@@ -13,6 +13,9 @@ class JadwalDokter extends Component {
       <br/>
       <div className='jadwaldokter-page'>
       	<div className='head'>
+	      <Link to='/make-appointment-filled'>
+	      	<Icon name='arrow circle left' color='grey' size='big' />
+	      </Link>
 	      <span className='notice'>
 	      	Jadwal hari biasa. Untuk hari libur Nasional, diberlakukan jadwal khusus.
 	      </span>
@@ -24,10 +27,10 @@ class JadwalDokter extends Component {
 				<td colspan="2">Jadwal berdasarkan...</td>
 			</tr>
 			<tr>
-				<td><a href='/jadwal-dokter' className="focus">
+				<td><a href='/jadwal-dokter-v2' className="focus">
 					DOKTER
 				</a></td>
-				<td><a href='/jadwal-tanggal' className="focus">
+				<td><a href='/jadwal-tanggal-v2' className="focus">
 					TANGGAL
 				</a></td>
 			</tr>
@@ -158,4 +161,4 @@ class JadwalDokter extends Component {
     );
   }
 }
-export default JadwalDokter;
+export default JadwalDokterWBack;

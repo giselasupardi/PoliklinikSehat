@@ -29,6 +29,8 @@ ReactDOM.render(
         <Route exact path="/validate-appointment" component={Appointment.ValidateAppointment} />
         <Route exact path="/jadwal-dokter" component={Appointment.JadwalDokter} />
         <Route exact path="/jadwal-tanggal" component={Appointment.JadwalTanggal} />
+        <Route exact path="/jadwal-dokter-v2" component={Appointment.JadwalDokterWBack} />
+        <Route exact path="/jadwal-tanggal-v2" component={Appointment.JadwalTanggalWBack} />
         <Route exact path="/edit-janji" component={Appointment.EditJanji} />
         <Route exact path="/editing" component={Appointment.Editing} />
         <Route exact path="/under-construction" component={UnderCons} />

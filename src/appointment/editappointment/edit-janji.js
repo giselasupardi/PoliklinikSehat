@@ -1,20 +1,49 @@
 import React, { Component } from 'react';
-import { Icon } from 'semantic-ui-react';
+import { Icon, Modal } from 'semantic-ui-react';
 import { Link } from "react-router-dom";
 import Navbar from '../../navbar';
 import '../../css/editjanji.css';
 
 class EditJanji extends Component {
 
+  showDeleteConfirmation() {
+    'trash-button'.click(function(){
+        ('.ui.basic.modal').modal('show');
+      });
+  }
+
   render() {
+
     return (
+      // <Modal>
+      //   <Header>
+      //     <Icon class="archive"/>
+      //     Archive Old Messages
+      //   </Header>
+      //   <div class="content">
+      //     <p>Apakah Anda yakin ingin membatalkan janji ini?</p>
+      //   </div>
+      //   <div class="actions">
+      //     <div class="ui red basic cancel inverted button">
+      //       <Icon class="remove"/>No
+      //     </div>
+      //     <div class="ui green ok inverted button">
+      //       <Icon class="checkmark"/>Yes
+      //     </div>
+      //   </div>
+      // </Modal>
+
       <div className='container'>
         <Navbar name='Appointment'/>
-        <div class="edit-page">
-          <div class="search-bar">
-
+        <div className="edit-page">
+          <br />
+          <div className="search-bar">
+          <form action='edit-janji' className='form-search'>
+            <input name="search-key" className="search-input" placeholder="Masukkan nama pasien atau tanggal" />
+            <button className='search-button'><Icon name='search' color="grey"/></button>
+          </form>
           </div>
-          <div class='appointments'>
+          <div className='appointments'>
             <table className='edit-table'>
               <tr>
                 <td>Romeo Uno</td>
@@ -35,8 +64,8 @@ class EditJanji extends Component {
               <tr>
                 <td>30 Desember 2017 | 15.30</td> 
                 <td>           
-                  <span>
-                    <Icon name='trash' size='large' color='red' />
+                  <span className='trash-button'>
+                    <Icon name='trash' size='large' color='red' className='trash-button' />
                   </span>
                 </td>
               </tr>
@@ -45,7 +74,7 @@ class EditJanji extends Component {
               </tr>
             </table>
           </div>
-          <div class='appointments'>
+          <div className='appointments'>
             <table className='edit-table'>
               <tr>
                 <td>Rolly Polly Olly</td> 
@@ -76,7 +105,7 @@ class EditJanji extends Component {
               </tr>
             </table>
           </div>
-          <div class='appointments'>
+          <div className='appointments'>
             <table className='edit-table'>
               <tr>
                 <td>Rolly Polly Olly</td> 

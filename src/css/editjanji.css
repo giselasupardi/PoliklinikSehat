@@ -17,6 +17,33 @@
 
 }
 
+.form-search {
+	display: flex;
+	width: 96%;
+}
+
+.search-bar {
+	border-radius: 30px;
+	border: 2px solid black;
+	width: 90%;
+	padding: 7px;
+	margin: 10px auto;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.search-button {
+	background: transparent;
+	width: 30px;
+	border: none;
+}
+
+.search-input {
+	border: 0;
+	width: 96%;
+	height: 22px;
+}
+
 .appointments {
 	border: 3px solid black !important;
 	width: 90%;

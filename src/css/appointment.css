@@ -2,6 +2,18 @@
   text-align: center;
 }
 
+.overflowy-none {
+  overflow-y: hidden; 
+}
+
+.overflowx-none {
+  overflow-x: hidden; 
+}
+
+.overflowy-scroll {
+  overflow-y: auto; 
+}
+
 table.appointment-table {
   margin: auto;
   margin-top: 2rem;
@@ -20,7 +32,8 @@ table.appointment-table {
     margin-top: 0 !important;
   }
   .appointment-table td {
-    width: 100% !important;
+    margin: auto;
+    width: 75% !important;
     display: block;
     vertical-align: middle !important;
     height: auto !important;
