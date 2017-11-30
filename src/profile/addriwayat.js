@@ -26,7 +26,7 @@ class AddRiwayat extends Component {
   render() {
     return (
       <div className='container'>
-        <div class='form-content'>
+        <div>
         <Form className='makeapp-form'>
         <NavLink to='/profile' activeClassName="active">
           <img src={back} height="25" width="25" align="left" alt="back"/>
