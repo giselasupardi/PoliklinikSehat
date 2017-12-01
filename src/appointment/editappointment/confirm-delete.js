@@ -29,8 +29,8 @@ class ConfirmDelete extends Component {
         <Modal.Actions>
           <a href='info-janji'><Button color='yellow' className='info-button-modal'>
             <div class='info-inside-modal'>
-              <Icon name='info circle' color='white' size='big'/>
-              <div>Detil<br/>janji</div>
+              <Icon name='info circle' color='white' size='medium'/>
+              <div>Detil janji</div>
             </div>
           </Button></a>
           <Button color='green' onClick={this.handleClose}>
