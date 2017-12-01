@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
 import { Button } from 'semantic-ui-react';
 import logo from '../resources/images/johan.jpg';
-import phone from '../resources/images/telephone.jpg';
-import cake from '../resources/images/cake.jpg';
-import man from '../resources/images/man.jpg';
 import Navbar from '../navbar';
 import { NavLink } from "react-router-dom";
 import '../css/profile.css';
