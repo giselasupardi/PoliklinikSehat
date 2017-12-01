@@ -27,7 +27,7 @@ class ConfirmDelete extends Component {
           </Modal.Description>
         </Modal.Content>
         <Modal.Actions>
-          <a href='under-construction'><Button color='yellow' className='info-button-modal'>
+          <a href='info-janji'><Button color='yellow' className='info-button-modal'>
             <div class='info-inside-modal'>
               <Icon name='info circle' color='white' size='big'/>
               <div>Detil<br/>janji</div>

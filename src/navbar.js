@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import { Icon, Grid } from 'semantic-ui-react';
 import { NavLink } from "react-router-dom";
+import Help from './help';
 import './css/navbar.css';
 
 class Navbar extends Component {
@@ -13,8 +14,8 @@ class Navbar extends Component {
             <h2 className='nav-text'>{this.props.name}</h2>
           </Grid.Column>
           <Grid.Column mobile={4} computer={4} textAlign='right'>
-            <Icon name='setting' size='large'/>
-            <Icon name='help circle' size='large'/>
+            <a href='under-construction'><Icon name='setting' size='large'/></a>
+            <Help />
           </Grid.Column>
         </Grid.Row>
         <Grid.Row textAlign='center' className='nav-icon'>
