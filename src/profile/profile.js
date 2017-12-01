@@ -29,13 +29,13 @@ class Profile extends Component{
                     </tr>
                     <tr>
                         <td align='center'>
-                        <img src={phone} height="25" width="25" alt="phone"/>08123456789
+                        <i class="call square icon"></i>08123456789
                         </td> 
                         <td align='center'>
-                        <img src={cake} height="25" width="25" alt="cake"/>31/12/99
+                        <i class="birthday icon"></i>31/12/99
                         </td>
                         <td align='center'>
-                        <img src={man} height="25" width="25" alt="man"/>
+                        <i class="male icon"></i>
                         </td>
                     </tr>
                    </table>
@@ -60,14 +60,17 @@ class Profile extends Component{
                         <td>2018</td>
                     </tr>
                     </table>
-                </div>
-                <div className='registerbutton'>
-                    <Button type='submit' primary className='app-button' onChange='return validateDropdown(this);'>
+					<Button type='submit' primary className='app-button' onChange='return validateDropdown(this);'>
                         <NavLink to='/addriwayat' activeClassName="active">
                             Add
                         </NavLink>
                     </Button>
-                </div>
+					<table>
+					<tr>
+						<td align='center'><font color="red"><i class="warning circle icon" color="red"></i>Klik riwayat untuk lihat lebih detail/hapus</font></td>
+					</tr>	
+					</table>
+				</div>
                 </div>
             );
     }
