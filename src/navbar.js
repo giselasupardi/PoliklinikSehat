@@ -21,22 +21,26 @@ class Navbar extends Component {
         <Grid.Row textAlign='center' className='nav-icon'>
           <Grid.Column mobile={4} computer={4}>
             <NavLink to='/bpjsvalidation' activeClassName="active">
-            <Icon link name='check square' size='big'/>
+            <Icon link name='check square' size='big'/> <br/>
+            Status BPJS
             </NavLink>
           </Grid.Column>
           <Grid.Column mobile={4} computer={4}>
            <NavLink to='/appointment' activeClassName="active">
-            <Icon link name='doctor' size='big'/>
+            <Icon link name='doctor' size='big'/> <br/>
+             <p class="janjidokter">Janji Dokter</p>
             </NavLink>
           </Grid.Column>
           <Grid.Column mobile={4} computer={4}>
            <NavLink to='/events' activeClassName="active">
-            <Icon name='calendar' size='big'/>
+            <Icon name='calendar' size='big'/> <br/>
+            Events
             </NavLink>
           </Grid.Column>
           <Grid.Column mobile={4} computer={4}>
            <NavLink to='/profile' activeClassName="active">
-            <Icon name='user' size='big'/>
+            <Icon name='user' size='big'/><br/>
+            Profile
             </NavLink>
           </Grid.Column>
         </Grid.Row>
