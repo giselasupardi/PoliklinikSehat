@@ -17,6 +17,8 @@
 table.appointment-table {
   margin: auto;
   margin-top: 2rem;
+  border-collapse: collapse;
+  width: 70%;
 }
 
 .welctext {
@@ -28,12 +30,12 @@ table.appointment-table {
     padding-top: 2rem !important;
   }
   .appointment-table {
-    width: 90% !important;
-    margin-top: 0 !important;
+    width: 53% !important;
+    margin-top: 1rem !important;
   }
   .appointment-table td {
-    margin: auto;
-    width: 75% !important;
+    margin: 5px auto;
+    width: 100% !important;
     display: block;
     vertical-align: middle !important;
     height: auto !important;
