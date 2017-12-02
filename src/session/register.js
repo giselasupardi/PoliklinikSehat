@@ -11,8 +11,8 @@ class Register extends Component {
         <Header textAlign='center'>
           <h1> REGISTER </h1>
         </Header>
-        <Form className='registerform' action='/appointment'>
-          <table className="register-table">
+        <Form className='session-form' action='/appointment'>
+          <table className="register-table session-table">
             <tr>
               <td>Email</td>
               <td><input placeholder='Email' /></td> 

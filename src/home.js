@@ -13,7 +13,7 @@ class Home extends Component {
   handleClose = () => this.setState({ modalOpen: false })
   render() {
     return (
-      <div className='container'>
+      <div className='session-container'>
         <div className='more-info'>
           About us | Language
         </div>

@@ -1,5 +1,7 @@
-.container {
-  width: 100% !important;
+.session-container {
+  width: 500px;
+  margin: 0 auto;
+  padding: 8px;
 }
 
 .more-info {
@@ -41,3 +43,8 @@
   color: #fff123;
 }
 
+@media screen and (max-width: 576px) {
+  .session-container {
+    width: 100%;
+  }
+}

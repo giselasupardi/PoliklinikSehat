@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Form, Button, Header } from 'semantic-ui-react';
+import { Link } from "react-router-dom";
 import Captcha from 'react-captcha';
 import '../css/login.css';
 
@@ -7,13 +8,13 @@ class Login extends Component {
 
   render() {
     return (
-      <div className='container'>
+      <div className='session-container'>
         <Header textAlign='center'>
           <h1> LOGIN </h1>
         </Header>
-        <Form className='loginform' action='/appointment'>
+        <Form className='session-form' action='/appointment'>
           <div className='loginbox'>
-          <table class='login-table'>
+          <table class='login-table session-table'>
             <tr>
               <td>Email</td>
               <td><input placeholder='Email' /></td> 
@@ -35,6 +36,12 @@ class Login extends Component {
           </div>
           </div>
         </Form>
+        <br/>        
+        <div className='haveaccount'>
+          <Link to='/'>
+            <p className='signin'>Don't have an account?</p>
+          </Link>
+        </div>
       </div>
     );
   }

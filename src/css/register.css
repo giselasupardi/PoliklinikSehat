@@ -1,8 +1,8 @@
 .container {
   text-align: center;
 }
-table {
-  width: 70% !important;
+table.register-table {
+  width: 70%;
   margin : auto;
   margin-top: 10rem;
       border-collapse:separate;

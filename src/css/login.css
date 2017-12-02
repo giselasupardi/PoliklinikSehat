@@ -7,7 +7,7 @@ h1 {
 }
 
 table.login-table {
-  width: 60% !important;
+  width: 60%;
   margin : auto;
   margin-top: 1rem;
   border-collapse:separate;
@@ -26,4 +26,21 @@ table.login-table {
 .loginbutton {
   margin-top: 3rem;
   text-align: center;
+}
+
+.session-table td:nth-child(1) {
+  text-align: left !important;
+}
+
+@media screen and (max-width: 576px) {
+  .session-table {
+    width: 90% !important;
+    margin: 0 auto !important;
+  }
+  .session-form {
+    margin-top: 4rem !important;
+  }
+  h1 {
+    margin-top: 4rem !important;
+  }
 }
