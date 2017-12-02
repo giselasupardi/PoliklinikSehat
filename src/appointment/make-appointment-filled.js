@@ -53,8 +53,10 @@ class MakeAppointmentFilled extends Component {
                 <option value="P">Perempuan</option>
               </select>
             </div>
-
-            <textarea name="tujuan" placeholder="Tujuan pertemuan" className='tujuan set-marginbottom' required>Konsultasi sakit maag</textarea>
+            <div className='input-w-span'>
+              <span className='tujuan'>Tujuan:</span>
+              <textarea name="tujuan" placeholder="Tujuan pertemuan" className='tujuan' required>Konsultasi sakit maag</textarea>
+            </div>
             
             <div className='input-w-bigspan'>
               <span>Pilih tanggal:</span>

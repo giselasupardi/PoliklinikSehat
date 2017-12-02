@@ -40,8 +40,17 @@
 	width: 80% !important;
 }
 
+.input-w-span textarea {
+	width: 80% !important;
+}
+
 .input-w-span span {
 	margin: auto;
+	margin-left: 1px;
+	text-align: left;
+}
+
+.input-w-span span.tujuan {
 	margin-left: 1px;
 	text-align: left;
 }
@@ -71,9 +80,13 @@
 	padding-right: 1rem !important;
 }
 
+.ui.form textarea:not([rows]) {
+	min-height: 1rem !important;
+}
+
 .tujuan {
 	resize: none !important;
-	height: 8rem !important;
+	height: 6rem !important;
 }
 
 table.app-table {
