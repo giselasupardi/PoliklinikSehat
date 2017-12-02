@@ -37,6 +37,7 @@ ReactDOM.render(
         <Route exact path="/under-construction" component={UnderCons} />
         <Route exact path="/events" component={Events.EventCalender} />
         <Route exact path="/penyuluhan" component={Events.Penyuluhan}/>
+        <Route exact path="/vaksinasi" component={Events.Vaksinasi}/>
         <Route exact path="/profile" component={Profile.Profile}/>
         <Route exact path="/addriwayat" component={Profile.AddRiwayat}/>
         <Route exact path="/hapusriwayat" component={Profile.HapusRiwayat}/>

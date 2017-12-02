@@ -10,36 +10,48 @@ import '../css/calendar.css';
 let eventArray = [
     {
         'title': 'Vaksinasi Polio',
-        'start': new Date(2017,11,20,9,0,0),
-        'end': new Date(2017,11,20,13,0,0),
+        'start': new Date(2017,11,10,9,0,0),
+        'end': new Date(2017,11,10,13,0,0),
         'tempat': 'Poliklinik Cisitu',
+        'type': 'vaksinasi'
     },
     {
         'title': 'Penyuluhan Keluarga Berencana',
-        'start': new Date(2017,11,22,8,0,0),
-        'end': new Date(2017,11,22,14,0,0),
+        'start': new Date(2017,11,12,8,0,0),
+        'end': new Date(2017,11,12,14,0,0),
         'tempat': 'Poliklinik Tubagus Ismail',
+        'type': 'penyuluhan'
     },
     {
         'title': 'Penyuluhan Kebersihan Lingkungan',
-        'start': new Date(2017,11,28,8,0,0),
-        'end': new Date(2017,11,28,14,0,0),
+        'start': new Date(2017,11,6,8,0,0),
+        'end': new Date(2017,11,6,14,0,0),
         'tempat': 'Poliklinik Ganesha',
+        'type': 'penyuluhan'
     },
     {
         'title': 'Vaksinasi Cacar Air',
-        'start': new Date(2017,11,30,9,0,0),
-        'end': new Date(2017,11,30,12,0,0),
+        'start': new Date(2017,11,4,9,0,0),
+        'end': new Date(2017,11,4,12,0,0),
         'tempat': 'Poliklinik Dipati Ukur',
+        'type': 'vaksinasi'
     }
 ];
 
+function EventType(props){
+    if(props.type === "penyuluhan"){
+        return <i>Penjelasan lebih lanjut, klik <Link to="/penyuluhan" style={{'color':'blue'}}>di sini</Link></i>;
+    } else {
+        return <i>Penjelasan lebih lanjut, klik <Link to="/vaksinasi" style={{'color':'blue'}}>di sini</Link></i>;
+    }
+}
+
 function Event({ event }) {
     return (
-        <span>
+        <span style={{'font-size':'1.2rem'}}>
             <b>{event.title}</b><br/>
             <b>Tempat</b> : { event.tempat }<br/>
-            Penjelasan lebih lanjut, klik <Link to="/penyuluhan" style={{'color':'blue'}}>di sini</Link>
+            <EventType type={event.type}/>
         </span>
     )
 }
@@ -85,7 +97,8 @@ class EventCalendar extends Component {
 
                 <Navbar name='Jadwal Kegiatan'/>
                 <br/>
-                <p style={{'text-align': 'center', 'padding': '5px'}}><b>Selamat datang di jadwal kalender kegiatan!</b><br/>
+                <p style={{'text-align': 'center', 'padding': '5px', 'font-size':'1.2rem'}}>
+                    <b>Selamat datang di jadwal kalender kegiatan!</b><br/>
                     Klik pada tanggal untuk melihat jadwal dengan lebih jelas.
                 </p>
 

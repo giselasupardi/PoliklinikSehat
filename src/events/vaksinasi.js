@@ -28,43 +28,43 @@ class Penyuluhan extends Component {
                 <Grid className='penyuluhan'>
                     <Grid.Row className='penyuluhan-title'>
                         <Grid.Column mobile={16} textAlign='center'>
-                            <h2>Penyuluhan Keluarga Berencana</h2>
+                            <h2>Vaksinasi Polio</h2>
                         </Grid.Column>
                     </Grid.Row>
 
                     <Grid.Row className='penyuluhan-content'>
                         <Grid.Column textAlign='right' mobile={6} tablet={7} computer={7}>
-                            <Icon link name='marker' size='huge' color="red"/>
+                            <Icon link name='marker' size='huge' color="orange"/>
                         </Grid.Column>
                         <Grid.Column mobile={10} tablet={9} computer={9}>
-                            <div className="penyuluhan-detail">Poliklinik Ganesha</div>
+                            <div className="penyuluhan-detail">Poliklinik Cisitu</div>
 
                         </Grid.Column>
                     </Grid.Row>
                     <Grid.Row className='penyuluhan-content'>
                         <Grid.Column textAlign='right' mobile={6} tablet={7} computer={7}>
-                            <Icon link name='clock' size='huge' color="red"/>
+                            <Icon link name='clock' size='huge' color="orange"/>
                         </Grid.Column>
                         <Grid.Column mobile={10} tablet={9} computer={9}>
-                            <div className="penyuluhan-detail">Pukul 8.00 - 12.00</div>
+                            <div className="penyuluhan-detail">Pukul 9.00 - 11.00</div>
 
                         </Grid.Column>
                     </Grid.Row>
                     <Grid.Row className='penyuluhan-content'>
                         <Grid.Column textAlign='right' mobile={6} tablet={7} computer={7}>
-                            <Icon link name='user' size='huge' color="red"/>
+                            <Icon link name='user' size='huge' color="orange"/>
                         </Grid.Column>
                         <Grid.Column mobile={10} tablet={9} computer={9}>
-                            <div className="penyuluhan-detail">Palang Merah Indonesia</div>
+                            <div className="penyuluhan-detail">Politeknik UNPAD</div>
 
                         </Grid.Column>
                     </Grid.Row>
                     <Grid.Row className='penyuluhan-content'>
                         <Grid.Column textAlign='right' mobile={6} tablet={7} computer={7}>
-                            <Icon link name='money' size='huge' color="red"/>
+                            <Icon link name='money' size='huge' color="orange"/>
                         </Grid.Column>
                         <Grid.Column mobile={10} tablet={9} computer={9}>
-                            <div className="penyuluhan-detail">Rp50.000,00</div>
+                            <div className="penyuluhan-detail">Rp10.000,00</div>
 
                         </Grid.Column>
                     </Grid.Row>
