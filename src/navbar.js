@@ -34,13 +34,13 @@ class Navbar extends Component {
           <Grid.Column mobile={4} computer={4}>
            <NavLink to='/events' activeClassName="active">
             <Icon name='calendar' size='big'/> <br/>
-            Events
+               <p class="janjidokter">Jadwal Kegiatan</p>
             </NavLink>
           </Grid.Column>
           <Grid.Column mobile={4} computer={4}>
            <NavLink to='/profile' activeClassName="active">
             <Icon name='user' size='big'/><br/>
-            Profile
+               <p class="janjidokter">Profil</p>
             </NavLink>
           </Grid.Column>
         </Grid.Row>

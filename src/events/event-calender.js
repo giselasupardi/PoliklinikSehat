@@ -10,60 +10,37 @@ import '../css/calendar.css';
 let eventArray = [
     {
         'title': 'Vaksinasi Polio',
-        'start': new Date(2017,10,20,9,0,0),
-        'end': new Date(2017,10,20,13,0,0),
+        'start': new Date(2017,11,20,9,0,0),
+        'end': new Date(2017,11,20,13,0,0),
         'tempat': 'Poliklinik Cisitu',
-        'penyelenggara': 'Unit Kesehatan Sukamaju',
-        'waktu': '9.00 - 13.00',
-        'biaya': 'Rp10.000,00'
     },
     {
         'title': 'Penyuluhan Keluarga Berencana',
-        'start': new Date(2017,10,22,8,0,0),
-        'end': new Date(2017,10,22,14,0,0),
+        'start': new Date(2017,11,22,8,0,0),
+        'end': new Date(2017,11,22,14,0,0),
         'tempat': 'Poliklinik Tubagus Ismail',
-        'penyelenggara': 'Politeknik Bandung',
-        'waktu': '8.00 - 14.00',
-        'biaya': 'Rp50.000,00'
     },
     {
         'title': 'Penyuluhan Kebersihan Lingkungan',
-        'start': new Date(2017,10,28,8,0,0),
-        'end': new Date(2017,10,28,14,0,0),
+        'start': new Date(2017,11,28,8,0,0),
+        'end': new Date(2017,11,28,14,0,0),
         'tempat': 'Poliklinik Ganesha',
-        'penyelenggara': 'PMI',
-        'waktu': '8.00 - 14.00',
-        'biaya': 'Gratis'
     },
     {
         'title': 'Vaksinasi Cacar Air',
-        'start': new Date(2017,10,30,9,0,0),
-        'end': new Date(2017,10,30,12,0,0),
+        'start': new Date(2017,11,30,9,0,0),
+        'end': new Date(2017,11,30,12,0,0),
         'tempat': 'Poliklinik Dipati Ukur',
-        'penyelenggara': 'Unit Kesehatan Universitas Padjajaran',
-        'waktu': '9.00 - 12.00',
-        'biaya': 'Rp20.000,00'
     }
 ];
 
 function Event({ event }) {
     return (
-        <div>
-            <h3>{event.title}</h3>
-            <div>
-                <b>Tempat</b> : { event.tempat }
-            </div>
-            <div>
-                <b>Penyelenggara</b> : { event.penyelenggara }
-            </div>
-            <div>
-                <b>Waktu</b> : { event.waktu }
-            </div>
-            <div>
-                <b>Biaya</b> : { event.biaya }
-            </div><br/>
-            <div>Penjelasan lebih lanjut, klik <Link to="/penyuluhan">di sini</Link></div>
-        </div>
+        <span>
+            <b>{event.title}</b><br/>
+            <b>Tempat</b> : { event.tempat }<br/>
+            Penjelasan lebih lanjut, klik <Link to="/penyuluhan" style={{'color':'blue'}}>di sini</Link>
+        </span>
     )
 }
 
@@ -106,8 +83,11 @@ class EventCalendar extends Component {
         return (
             <div>
 
-                <Navbar name='Events'/>
+                <Navbar name='Jadwal Kegiatan'/>
                 <br/>
+                <p style={{'text-align': 'center', 'padding': '5px'}}><b>Selamat datang di jadwal kalender kegiatan!</b><br/>
+                    Klik pada tanggal untuk melihat jadwal dengan lebih jelas.
+                </p>
 
                 <Calender/>
             </div>
