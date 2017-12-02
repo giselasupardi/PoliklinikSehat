@@ -9,10 +9,10 @@ class Appointment extends Component {
     return (
       <div className='container'>
         <Navbar name='Janji Dokter'/>
+        <br />
         <div className='welcometext'>
           <h2 className='welctext'>Selamat malam, Trundy</h2>
         </div>
-
 
         <div className='choosetext'>
           Apa yang ingin Anda lakukan hari ini?

@@ -20,12 +20,12 @@ table.appointment-table {
 }
 
 .welctext {
-  padding-top: 10rem !important;
+  padding-top: 7rem !important;
 }
 
 @media screen and (max-width: 576px) {
   .welctext {
-    padding-top: 1rem !important;
+    padding-top: 2rem !important;
   }
   .appointment-table {
     width: 90% !important;
