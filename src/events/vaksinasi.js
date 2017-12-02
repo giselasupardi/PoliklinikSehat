@@ -36,7 +36,7 @@ class Penyuluhan extends Component {
                         <Grid.Column textAlign='right' mobile={6} tablet={7} computer={7}>
                             <Icon link name='marker' size='huge' color="orange"/>
                         </Grid.Column>
-                        <Grid.Column mobile={10} tablet={9} computer={9}>
+                        <Grid.Column mobile={10} tablet={9} computer={9} className="middle aligned">
                             <div className="penyuluhan-detail">Poliklinik Cisitu</div>
 
                         </Grid.Column>
@@ -45,8 +45,8 @@ class Penyuluhan extends Component {
                         <Grid.Column textAlign='right' mobile={6} tablet={7} computer={7}>
                             <Icon link name='clock' size='huge' color="orange"/>
                         </Grid.Column>
-                        <Grid.Column mobile={10} tablet={9} computer={9}>
-                            <div className="penyuluhan-detail">Pukul 9.00 - 11.00</div>
+                        <Grid.Column mobile={10} tablet={9} computer={9} className="middle aligned">
+                            <div className="penyuluhan-detail">Rabu, 6 Desember 2017<br/>Pukul 9.00 - 11.00</div>
 
                         </Grid.Column>
                     </Grid.Row>
@@ -54,7 +54,7 @@ class Penyuluhan extends Component {
                         <Grid.Column textAlign='right' mobile={6} tablet={7} computer={7}>
                             <Icon link name='user' size='huge' color="orange"/>
                         </Grid.Column>
-                        <Grid.Column mobile={10} tablet={9} computer={9}>
+                        <Grid.Column mobile={10} tablet={9} computer={9} className="middle aligned">
                             <div className="penyuluhan-detail">Politeknik UNPAD</div>
 
                         </Grid.Column>
@@ -63,7 +63,7 @@ class Penyuluhan extends Component {
                         <Grid.Column textAlign='right' mobile={6} tablet={7} computer={7}>
                             <Icon link name='money' size='huge' color="orange"/>
                         </Grid.Column>
-                        <Grid.Column mobile={10} tablet={9} computer={9}>
+                        <Grid.Column mobile={10} tablet={9} computer={9} className="middle aligned">
                             <div className="penyuluhan-detail">Rp10.000,00</div>
 
                         </Grid.Column>
