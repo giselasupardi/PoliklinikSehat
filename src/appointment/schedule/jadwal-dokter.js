@@ -39,12 +39,12 @@ class JadwalDokter extends Component {
 		<Form className='select'>
 	        <select name="dokter">
               <option value="template" disabled selected>Pilih dokter</option>
-	          <option value="1">dr. Antis Akit</option>
-	          <option value="2">dr. Jang An Pil Ih</option>
-	          <option value="3">dr. Kuatdan Pintar</option>
-	          <option value="4">dr. Pastisehat Lah</option>
-	          <option value="5">dr. Sayno Tosakit</option>
-	          <option value="6">dr. Se Nyum Trus</option>
+	          <option value="1">dr. Antis Akit - Mata</option>
+	          <option value="2">dr. Jang An Pil Ih - Internis</option>
+	          <option value="3">dr. Kuatdan Pintar - THT</option>
+	          <option value="4">dr. Pastisehat Lah - Internis</option>
+	          <option value="5">dr. Sayno Tosakit - Saraf</option>
+	          <option value="6">dr. Se Nyum Trus - Gigi</option>
 	        </select>
 	    </Form>
 

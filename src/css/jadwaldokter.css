@@ -53,6 +53,7 @@
 .notice {
 	margin: auto 0 auto;
 	color: #cc0000;
+	width: 100%;
 }
 
 .bg-green {
@@ -83,6 +84,10 @@
 .bg-yellow {
 	background-color: #f6eaae !important;
 	color: black;
+}
+
+.bg-black {
+	background-color: black !important;
 }
 
 .menu-table {
@@ -203,7 +208,7 @@
 	height: 30px;
 	width: 16px;
 	border: 1px solid white;
-	background-color: black;
+	background-color: dimgrey;
 }
 
 .jadwal-per-tanggal td:nth-child(1) {

@@ -32,7 +32,8 @@ class JadwalTanggal extends Component {
       <div className='jadwaldokter-page'>
       	<div className='head'>
 	      <span className='notice'>
-	      	Jadwal hari biasa. Untuk hari libur Nasional, diberlakukan jadwal khusus.
+	      	Warna hitam = jam tersebut telah di-book,<br/>
+	      	warna abu-abu = jadwal tidak tersedia.
 	      </span>
 		</div>
 		<br/>
@@ -119,7 +120,7 @@ class JadwalTanggal extends Component {
 						<td className=''></td>
 						<td className='bg-orange'></td>
 						<td className=''></td>
-						<td className='bg-yellow'></td>
+						<td className='bg-black'></td>
 						<td className='bg-pink'></td>
 						<td className=''></td>
 					</tr>
@@ -153,7 +154,7 @@ class JadwalTanggal extends Component {
 					<tr>
 						<td>11.00</td>
 						<td className='bg-green'></td>
-						<td className='bg-orange'></td>
+						<td className='bg-black'></td>
 						<td className=''></td>
 						<td className='bg-yellow'></td>
 						<td className=''></td>
@@ -174,7 +175,7 @@ class JadwalTanggal extends Component {
 						<td className=''></td>
 						<td className=''></td>
 						<td className=''></td>
-						<td className='bg-pink'></td>
+						<td className='bg-black'></td>
 						<td className=''></td>
 					</tr>
 					<tr>
@@ -188,7 +189,7 @@ class JadwalTanggal extends Component {
 					</tr>
 					<tr>
 						<td>15.00</td>
-						<td className='bg-green'></td>
+						<td className='bg-black'></td>
 						<td className=''></td>
 						<td className=''></td>
 						<td className=''></td>
@@ -234,7 +235,7 @@ class JadwalTanggal extends Component {
 					<tr>
 						<td>20.00</td>
 						<td className=''></td>
-						<td className='bg-orange'></td>
+						<td className='bg-black'></td>
 						<td className=''></td>
 						<td className=''></td>
 						<td className='bg-pink'></td>

@@ -33,7 +33,7 @@ class Appointment extends Component {
                   <button>
                     <Icon name='list' size='huge' color='grey'/>
                     <br/><br/>
-                    Melihat Jadwal Dokter
+                    Melihat jadwal dokter
                   </button>
                 </Link>
               </td> 
