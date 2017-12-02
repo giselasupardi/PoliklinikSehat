@@ -41,6 +41,7 @@ ReactDOM.render(
         <Route exact path="/profile" component={Profile.Profile}/>
         <Route exact path="/addriwayat" component={Profile.AddRiwayat}/>
         <Route exact path="/hapusriwayat" component={Profile.HapusRiwayat}/>
+        <Route exact path="/validasiadd" component={Profile.ValidasiAdd}/>
     </div>
   </BrowserRouter>
 , document.getElementById('root'));

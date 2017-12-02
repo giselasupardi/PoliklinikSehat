@@ -57,17 +57,17 @@ class Profile extends Component{
                         <td>2018</td>
                     </tr>
                     </table>
-					<Button type='submit' primary className='app-button' onChange='return validateDropdown(this);'>
+			<Button type='submit' primary className='app-button' onChange='return validateDropdown(this);'>
                         <NavLink to='/addriwayat' activeClassName="active">
                             Add
                         </NavLink>
                     </Button>
-					<table>
-					<tr>
-						<td align='center'><font color="red"><i class="warning circle icon" color="red"></i>Klik riwayat untuk lihat lebih detail/hapus</font></td>
-					</tr>	
-					</table>
-				</div>
+                    <table>
+			<tr>
+                            <td align='center'><font color="red"><i class="warning circle icon" color="red"></i>Klik riwayat untuk lihat lebih detail/hapus</font></td>
+			</tr>	
+                    </table>
+		</div>
                 </div>
             );
     }

@@ -29,10 +29,10 @@ class AddRiwayat extends Component {
         <div>
         <Form className='makeapp-form'>
         <NavLink to='/profile' activeClassName="active">
-          <img src={back} height="25" width="25" align="left" alt="back"/>
+            <img src={back} height="25" width="25" align="left" alt="back"/>
         </NavLink>
         <h1> Tambah Daftar Riwayat </h1>
-        <table className='add-table'>
+        <table>
         <tr>
             <td align='left'> Nama Penyakit :</td>
             <td colspan='2' width='60%' text-align='right'>
@@ -87,7 +87,7 @@ class AddRiwayat extends Component {
         </Form>
         <div class='flex-end'>
             <Button href='make-appointment' className='no-button'>Reset All</Button>
-        <NavLink to='/profile' activeClassName="active">    
+        <NavLink to='/ValidasiAdd' activeClassName="active">    
         <Button type='submit' primary className='ok-button'>
                             Send
                         </Button>
