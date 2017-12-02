@@ -25,6 +25,22 @@ a {
   background-color: #4aa6f7;
 }
 
-.janjidokter {
-  font-size: 0.9rem;
+@media only screen and (max-width: 320px){
+  .janjidokter {
+    font-size: 0.7rem;
+  }
+  .statusbpjs {
+    font-size: 0.8rem;
+  }
 }
+
+
+@media only screen and (min-width: 360px){
+  .janjidokter {
+    font-size: 0.9rem;
+  }
+  .statusbpjs {
+    font-size: 0.9rem;
+  }
+}
+

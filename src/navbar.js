@@ -22,7 +22,7 @@ class Navbar extends Component {
           <Grid.Column mobile={4} computer={4}>
             <NavLink to='/bpjsvalidation' activeClassName="active">
             <Icon link name='check square' size='big'/> <br/>
-            Status BPJS
+            <p class="statusbpjs">Status BPJS</p>
             </NavLink>
           </Grid.Column>
           <Grid.Column mobile={4} computer={4}>
