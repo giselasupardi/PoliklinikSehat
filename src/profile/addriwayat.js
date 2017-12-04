@@ -62,25 +62,25 @@ class AddRiwayat extends Component {
           <tr>
             <td align='left'> Deskripsi :</td>
             <td colspan='2' width='60%' text-align='right'>
-                <textarea name="deskripsi" placeholder="Deskripsi"></textarea>
+                <textarea id="textarea-riwayat" name="deskripsi" placeholder="Deskripsi"></textarea>
             </td>
           </tr>
           <tr>
             <td align='left'> Anjuran :</td>
             <td colspan='2' width='60%' text-align='right'>
-                <textarea name="anjuran" placeholder="Anjuran"></textarea>
+                <textarea id="textarea-riwayat" name="anjuran" placeholder="Anjuran"></textarea>
             </td>
           </tr>
           <tr>
             <td align='left'> Tindak Lanjut :</td>
             <td colspan='2' width='60%' text-align='right'>
-                <textarea name="tindaklanjut" placeholder="Tindak Lanjut"></textarea>
+                <textarea id="textarea-riwayat" name="tindaklanjut" placeholder="Tindak Lanjut"></textarea>
             </td>
           </tr>
           <tr>
             <td align='left'> Obat :</td>
             <td colspan='2' width='60%' text-align='right'>
-                <textarea name="obat" placeholder="Obat"></textarea>
+                <textarea id="textarea-riwayat" name="obat" placeholder="Obat"></textarea>
             </td>
           </tr>
           </table>

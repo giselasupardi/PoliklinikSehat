@@ -1,5 +1,11 @@
 table.add-table {
 	border: 0px !important;
-        width : 100;
+        width : 100%;
 	border-color: transparent !important;
 }
+
+#textarea-riwayat {
+	height: 5rem;
+	resize: none;
+}
+
