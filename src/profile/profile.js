@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import { Button } from 'semantic-ui-react';
 import logo from '../resources/images/johan.jpg';
 import Navbar from '../navbar';
 import { NavLink } from "react-router-dom";
+import { Button } from "semantic-ui-react";
 import '../css/profile.css';
 
 class Profile extends Component{
@@ -57,11 +57,13 @@ class Profile extends Component{
                         <td>2018</td>
                     </tr>
                     </table>
-			<Button type='submit' primary className='app-button' onChange='return validateDropdown(this);'>
+			{/*<Button type='submit' primary className='app-button' onChange='return validateDropdown(this);'>*/}
+                    <div style={{'text-align':'center'}}>
                         <NavLink to='/addriwayat' activeClassName="active">
-                            Add
+                            <Button color='green' className="fullwidth">Add</Button>
                         </NavLink>
-                    </Button>
+                    </div>
+                    {/*</Button>*/}
                     <table>
 			<tr>
                             <td align='center'><font color="red"><i class="warning circle icon" color="red"></i>Klik riwayat untuk lihat lebih detail/hapus</font></td>
