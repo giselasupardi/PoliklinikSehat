@@ -6,7 +6,7 @@ class UnderCons extends Component {
   render() {
     return (
       <div>
-        <Navbar/>
+        <Navbar name="Under Construction"/>
         <br/><br/>
         <div className='us-page'>
           <p>Sorry, we are still under construction

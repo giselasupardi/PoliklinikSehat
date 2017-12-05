@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import { Form, Button } from 'semantic-ui-react';
 import DatePicker from 'react-datepicker';
 import moment from 'moment';
@@ -59,9 +60,9 @@ class Editing extends Component {
             </div>
 
             <div className='input-w-bigspan'>
-              <span><a href="/jadwal-dokter-v2" className="link-jadwal">
+              <span><Link to="/jadwal-dokter-v2" className="link-jadwal">
                 Lihat jadwal dokter
-              </a></span>
+              </Link></span>
               <select name="dokter">
                 <option value="template" disabled selected>Pilih dokter</option>
                 <option value="1">dr. Antis Akit - Mata</option>

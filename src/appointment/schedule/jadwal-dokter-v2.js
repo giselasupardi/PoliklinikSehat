@@ -27,16 +27,16 @@ class JadwalDokterWBack extends Component {
 				<td colspan="2">Jadwal berdasarkan...</td>
 			</tr>
 			<tr>
-				<td><a href='/jadwal-dokter-v2' className="focus">
+				<td><Link to='/jadwal-dokter-v2' className="focus">
 					<Button className='menu-jadwal-button'>	
 						DOKTER
 					</Button>
-				</a></td>
-				<td><a href='/jadwal-tanggal-v2' className="focus">
+				</Link></td>
+				<td><Link to='/jadwal-tanggal-v2' className="focus">
 					<Button className='menu-jadwal-button'>					
 						TANGGAL					
 					</Button>
-				</a></td>
+				</Link></td>
 			</tr>
 		</table>
 

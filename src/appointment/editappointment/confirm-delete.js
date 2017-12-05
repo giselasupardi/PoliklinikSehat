@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Icon, Modal, Button } from 'semantic-ui-react';
+import { Link } from 'react-router-dom';
 import '../../css/confirmdelete.css';
 
 class ConfirmDelete extends Component {
@@ -27,12 +28,12 @@ class ConfirmDelete extends Component {
           </Modal.Description>
         </Modal.Content>
         <Modal.Actions>
-          <a href='info-janji'><Button color='yellow' className='info-button-modal'>
+          <Link to='info-janji'><Button color='yellow' className='info-button-modal'>
             <div class='info-inside-modal'>
               <Icon name='info circle' color='white' size='medium'/>
               <div>Detil janji</div>
             </div>
-          </Button></a>
+          </Button></Link>
           <Button color='green' onClick={this.handleClose}>
             Kembali
           </Button>

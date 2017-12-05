@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Form, Button } from 'semantic-ui-react';
 import Navbar from '../../navbar';
 import '../../css/jadwaldokter.css';
+import {Link} from 'react-router-dom';
 
 class JadwalDokter extends Component {
   render() {
@@ -23,16 +24,16 @@ class JadwalDokter extends Component {
 				<td colspan="2">Jadwal berdasarkan...</td>
 			</tr>
 			<tr>
-				<td><a href='/jadwal-dokter' className="focus">
+				<td><Link to='/jadwal-dokter' className="focus">
 					<Button className='menu-jadwal-button'>	
 						DOKTER
 					</Button>
-				</a></td>
-				<td><a href='/jadwal-tanggal' className="focus">
+				</Link></td>
+				<td><Link to='/jadwal-tanggal' className="focus">
 					<Button className='menu-jadwal-button'>					
 						TANGGAL					
 					</Button>
-				</a></td>
+				</Link></td>
 			</tr>
 		</table>
 

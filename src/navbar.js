@@ -14,7 +14,7 @@ class Navbar extends Component {
             <h2 className='nav-text'>{this.props.name}</h2>
           </Grid.Column>
           <Grid.Column mobile={4} computer={4} textAlign='right'>
-            <a href='under-construction'><Icon name='setting' size='large'/></a>
+            <NavLink to='/under-construction'><Icon name='setting' size='large'/></NavLink>
             <Help />
           </Grid.Column>
         </Grid.Row>
