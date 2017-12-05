@@ -3,7 +3,7 @@ import { Button, Form } from 'semantic-ui-react';
 import 'react-datepicker/dist/react-datepicker.css';
 import '../css/validateappointment.css';
 
-class HapusRiwayat extends Component {
+class ValidasiAdd extends Component {
 
   render() {
     return (
@@ -41,10 +41,8 @@ class HapusRiwayat extends Component {
             </tr>
           </table>
         </div>
-        <h1> Apakah anda yakin menambahkan riwayat penyakit ini? </h1>
-        <h6> Pilih 'kembali' untuk mengubah riwayat penyakit </h6>
-        <h6> Pilih 'ya' untuk menyimpan riwayat penyakit </h6>
-        <Form className='valid-form' action='/profile'>
+        <h3> Apakah anda yakin menambahkan riwayat penyakit ini? </h3>
+        <Form className='valid-tefo' action='/profile'>
           <div class='flex-end'>
             <Button href='addriwayat' className='no-button'>Kembali</Button>
             <Button type='profile' primary className='ok-button'>Ya</Button>
@@ -55,4 +53,4 @@ class HapusRiwayat extends Component {
   }
 
  }
-export default HapusRiwayat;
+export default ValidasiAdd;

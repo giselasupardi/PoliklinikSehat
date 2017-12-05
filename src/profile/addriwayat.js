@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Form, Button } from 'semantic-ui-react';
+import { Form, Button, Icon } from 'semantic-ui-react';
 import DatePicker from 'react-datepicker';
 import moment from 'moment';
 import 'react-datepicker/dist/react-datepicker.css';
@@ -26,12 +26,13 @@ class AddRiwayat extends Component {
   render() {
     return (
       <div className='container'>
-        <div>
-        <Form className='makeapp-form'>
-        <NavLink to='/profile' activeClassName="active">
-            <img src={back} height="25" width="25" align="left" alt="back"/>
-        </NavLink>
-        <h1> Tambah Daftar Riwayat </h1>
+        <div class='fullwidth back-arrow-button'>
+          <NavLink to='/profile' activeClassName="active">
+            <Icon name='arrow circle left' size='big' />
+          </NavLink>
+        </div>
+        <h1 class='judul-addriwayat'> Tambah Daftar Riwayat </h1>
+        <Form className='addriwayat-form'>
         <table>
         <tr>
             <td align='left'> Nama Penyakit :</td>
@@ -93,7 +94,6 @@ class AddRiwayat extends Component {
                         </Button>
                         </NavLink>
           </div>
-        </div>
       </div>
     );
   }

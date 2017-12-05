@@ -9,3 +9,15 @@ table.add-table {
 	resize: none;
 }
 
+.back-arrow-button {
+	text-align: left;
+	margin-top: 1rem;
+}
+
+.judul-addriwayat {
+	margin-top: 0 !important;
+}
+
+.addriwayat-form {
+	margin-top: 10px !important;
+}
