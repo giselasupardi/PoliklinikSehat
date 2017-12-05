@@ -34,7 +34,7 @@ class Navbar extends Component {
           <Grid.Column mobile={4} computer={4}>
            <NavLink to='/events' activeClassName="active">
             <Icon name='calendar' size='big'/> <br/>
-               <p class="janjidokter">Jadwal Kegiatan</p>
+               <p class="janjidokter">Kegiatan</p>
             </NavLink>
           </Grid.Column>
           <Grid.Column mobile={4} computer={4}>

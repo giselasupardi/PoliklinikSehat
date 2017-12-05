@@ -25,6 +25,10 @@ a {
   background-color: #4aa6f7;
 }
 
+i.icon {
+  margin: 0;
+}
+
 @media only screen and (max-width: 320px){
   .janjidokter {
     font-size: 0.7rem;
