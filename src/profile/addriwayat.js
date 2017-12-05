@@ -5,7 +5,6 @@ import moment from 'moment';
 import 'react-datepicker/dist/react-datepicker.css';
 import '../css/addriwayat.css';
 import { NavLink } from "react-router-dom";
-import back from '../resources/images/back.png';
 
 class AddRiwayat extends Component {
 
